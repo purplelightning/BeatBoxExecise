@@ -1,0 +1,46 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">//定义当button 处于pressed 状态时的形态。
+        <shape>
+            <!-- 渐变 -->
+            <gradient
+                android:startColor="#ff0000"
+                android:endColor="#0000ff"
+                android:angle="135"/>
+                <!--android:type="linear"/>-->
+            <!-- 描边 -->
+            <stroke
+                android:width="4dp"
+                android:color="#ff0000"
+                android:dashGap="0dp"
+                android:dashWidth="2dp"/>
+            <!-- 圆角 -->
+            <corners
+                android:radius="10dp"/>
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"/>
+        </shape>
+    </item>
+    <item android:state_selected="false">//定义当button获得 focus时的形态
+        <shape>
+            <solid android:color="#5060f0"/>
+            <stroke
+                android:width="2dp"
+                android:color="#000f0f"/>
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="0dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="5dp"
+                />
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"/>
+        </shape>
+    </item>
+</selector>
