@@ -4,7 +4,7 @@
         <shape android:shape="oval">
             <solid android:color="@color/red"/>
             <stroke android:width="4dp"
-                    android:color="#ffffff"/>
+                    android:color="#fff00f"/>
             <gradient
                 android:startColor="#ff0000"
                 android:endColor="#0fff00"
